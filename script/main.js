@@ -71,7 +71,7 @@ const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dar
 const getCurrentIcon = () => document.classList.contains(iconTheme) ? 'bx-moon' : 'bx-sun'
 
 
-if(selectedTheme){
+if(selectedTheme === 'light'){
     document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
     // document.classList[selectedIcon === 'bx-sun' ? 'add' : 'remove'](iconTheme)
 }

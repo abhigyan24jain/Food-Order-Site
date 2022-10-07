@@ -7,9 +7,9 @@
 
   --first-color: #1589FF; /* #069C54 */
   --first-color-alt: #044186;
-  --title-color: #043f7b; /* #393939 */
-  --text-color: #707070;
   --text-color-light: #A6A6A6;
+  --title-color: #043f7b; /* #393939 */;
+  --text-color: #707070;
   --body-color: #FBFEFD;
   --container-color: #FFFFFF;
 
@@ -55,6 +55,13 @@
 html{
   scroll-behavior: smooth;
 }
+body.light-theme{
+  --title-color: #043f7b; /* #393939 */;
+  --text-color: #707070;
+  --body-color: #FBFEFD;
+  --container-color: #FFFFFF;
+ 
+}
 
 body.dark-theme{
   --title-color: #F1F3F2;
@@ -62,6 +69,7 @@ body.dark-theme{
   --body-color: hsl(226, 75%, 8%); /* #1D2521 */
   --container-color: hsl(240, 23%, 12%); /* #27302C */ 
 }
+bd
 
 /*========== Button Dark/Light ==========*/
 .change-theme{
@@ -213,10 +221,11 @@ justify-content: center;
 align-items: center;
 padding: .3rem;
 background: #158aff6c; /* rgba(6,156,84,.5) */
-border-radius: .4rem;
+border-radius: 1.5rem;
 z-index: var(--z-tooltip);
 transition: .4s;
 visibility: hidden;
+cursor: pointer;
 }
 
 .scrollTop:hover{
@@ -224,7 +233,7 @@ background-color: #158affb0;
 }
 
 .scrollTop__icon{
-font-size: 1.8rem;
+font-size: 2rem;
 color: var(--body-color);
 }
 
