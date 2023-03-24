@@ -87,7 +87,7 @@ themeBtn.addEventListener('click', () => {
 
 const sr = ScrollReveal({
     origin: 'top',
-    distance: '30px',
+    distance: '20px',
     duration: '2000',
     reset: true
 });
@@ -103,7 +103,25 @@ sr.reveal(`.about__data, .about__img,
             })
 
 
-
+var x = document.getElementById("login");
+var y = document.getElementById("register");
+var z = document.getElementById("btn");
+function register() {
+    x.style.left = "-400px";
+    y.style.left = "40px";
+    z.style.left = "110px";
+}
+function login() {
+    x.style.left = "50px";
+    y.style.left = "450px";
+    z.style.left = "0px";
+}
+var modal = document.getElementById("login-form");
+window.onclick = function (event) {
+    if (event.target == modal) {
+    modal.style.display = "none";
+    }
+};
 
 
 
